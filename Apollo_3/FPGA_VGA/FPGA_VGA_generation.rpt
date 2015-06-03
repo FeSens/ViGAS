@@ -1,0 +1,69 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=/home/vigas/Apollo/Apollo_3 --output-directory=/home/vigas/Apollo/Apollo_3/FPGA_VGA --report-file=bsf:/home/vigas/Apollo/Apollo_3/FPGA_VGA/FPGA_VGA.bsf --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSXFC6D6F31C8ES --system-info=DEVICE_SPEEDGRADE=8_H6 --component-file=/home/vigas/Apollo/Apollo_3/FPGA_VGA.qsys --remove-qsys-generate-warning
+Progress: Loading Apollo_3/FPGA_VGA.qsys
+Progress: Reading input file
+Progress: Adding VGA_0 [VGA 1.0]
+Progress: Parameterizing module VGA_0
+Progress: Adding clk_0 [clock_source 14.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 14.1]
+Progress: Parameterizing module hps_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: FPGA_VGA.hps_0: HPS Main PLL counter settings: n = 0  m = 31
+Info: FPGA_VGA.hps_0: HPS peripherial PLL counter settings: n = 0  m = 19
+Warning: FPGA_VGA.hps_0: set_interface_assignment: Interface "hps_io" does not exist
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=/home/vigas/Apollo/Apollo_3 --output-directory=/home/vigas/Apollo/Apollo_3/FPGA_VGA/synthesis --file-set=QUARTUS_SYNTH --report-file=html:/home/vigas/Apollo/Apollo_3/FPGA_VGA/FPGA_VGA.html --report-file=sopcinfo:/home/vigas/Apollo/Apollo_3/FPGA_VGA.sopcinfo --report-file=cmp:/home/vigas/Apollo/Apollo_3/FPGA_VGA/FPGA_VGA.cmp --report-file=qip:/home/vigas/Apollo/Apollo_3/FPGA_VGA/synthesis/FPGA_VGA.qip --report-file=svd:/home/vigas/Apollo/Apollo_3/FPGA_VGA/synthesis/FPGA_VGA.svd --report-file=regmap:/home/vigas/Apollo/Apollo_3/FPGA_VGA/synthesis/FPGA_VGA.regmap --report-file=xml:/home/vigas/Apollo/Apollo_3/FPGA_VGA/FPGA_VGA.xml --report-file=debuginfo:/home/vigas/Apollo/Apollo_3/FPGA_VGA/synthesis/FPGA_VGA.debuginfo --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSXFC6D6F31C8ES --system-info=DEVICE_SPEEDGRADE=8_H6 --component-file=/home/vigas/Apollo/Apollo_3/FPGA_VGA.qsys --remove-qsys-generate-warning --language=VERILOG
+Progress: Loading Apollo_3/FPGA_VGA.qsys
+Progress: Reading input file
+Progress: Adding VGA_0 [VGA 1.0]
+Progress: Parameterizing module VGA_0
+Progress: Adding clk_0 [clock_source 14.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 14.1]
+Progress: Parameterizing module hps_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: FPGA_VGA.hps_0: HPS Main PLL counter settings: n = 0  m = 31
+Info: FPGA_VGA.hps_0: HPS peripherial PLL counter settings: n = 0  m = 19
+Warning: FPGA_VGA.hps_0: set_interface_assignment: Interface "hps_io" does not exist
+Info: FPGA_VGA: Generating FPGA_VGA "FPGA_VGA" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master hps_0.h2f_lw_axi_master and slave VGA_0.avalon_slave_0 because the master is of type axi and the slave is of type avalon.
+Info: VGA_0: "FPGA_VGA" instantiated VGA "VGA_0"
+Info: hps_0: "Running  for module: hps_0"
+Info: hps_0: HPS Main PLL counter settings: n = 0  m = 31
+Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 19
+Warning: hps_0: set_interface_assignment: Interface "hps_io" does not exist
+Info: hps_0: "FPGA_VGA" instantiated altera_hps "hps_0"
+Info: mm_interconnect_0: "FPGA_VGA" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "FPGA_VGA" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: VGA_0_avalon_slave_0_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "VGA_0_avalon_slave_0_translator"
+Info: hps_0_h2f_lw_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_lw_axi_master_agent"
+Info: VGA_0_avalon_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "VGA_0_avalon_slave_0_agent"
+Info: VGA_0_avalon_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "VGA_0_avalon_slave_0_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: VGA_0_avalon_slave_0_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "VGA_0_avalon_slave_0_burst_adapter"
+Info: Reusing file /home/vigas/Apollo/Apollo_3/FPGA_VGA/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/vigas/Apollo/Apollo_3/FPGA_VGA/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: VGA_0_avalon_slave_0_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "VGA_0_avalon_slave_0_rsp_width_adapter"
+Info: Reusing file /home/vigas/Apollo/Apollo_3/FPGA_VGA/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file /home/vigas/Apollo/Apollo_3/FPGA_VGA/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: FPGA_VGA: Done "FPGA_VGA" with 20 modules, 73 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

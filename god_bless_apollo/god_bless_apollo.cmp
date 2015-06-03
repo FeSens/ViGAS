@@ -1,0 +1,47 @@
+	component god_bless_apollo is
+		port (
+			clk_clk              : in    std_logic                     := 'X';             -- clk
+			reset_reset_n        : in    std_logic                     := 'X';             -- reset_n
+			memory_mem_a         : out   std_logic_vector(14 downto 0);                    -- mem_a
+			memory_mem_ba        : out   std_logic_vector(2 downto 0);                     -- mem_ba
+			memory_mem_ck        : out   std_logic_vector(0 downto 0);                     -- mem_ck
+			memory_mem_ck_n      : out   std_logic_vector(0 downto 0);                     -- mem_ck_n
+			memory_mem_cke       : out   std_logic_vector(0 downto 0);                     -- mem_cke
+			memory_mem_cs_n      : out   std_logic_vector(0 downto 0);                     -- mem_cs_n
+			memory_mem_dm        : out   std_logic_vector(3 downto 0);                     -- mem_dm
+			memory_mem_ras_n     : out   std_logic_vector(0 downto 0);                     -- mem_ras_n
+			memory_mem_cas_n     : out   std_logic_vector(0 downto 0);                     -- mem_cas_n
+			memory_mem_we_n      : out   std_logic_vector(0 downto 0);                     -- mem_we_n
+			memory_mem_reset_n   : out   std_logic;                                        -- mem_reset_n
+			memory_mem_dq        : inout std_logic_vector(31 downto 0) := (others => 'X'); -- mem_dq
+			memory_mem_dqs       : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- mem_dqs
+			memory_mem_dqs_n     : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- mem_dqs_n
+			memory_mem_odt       : out   std_logic_vector(0 downto 0);                     -- mem_odt
+			oct_rzqin            : in    std_logic                     := 'X';             -- rzqin
+			memory_0_mem_a       : out   std_logic_vector(12 downto 0);                    -- mem_a
+			memory_0_mem_ba      : out   std_logic_vector(2 downto 0);                     -- mem_ba
+			memory_0_mem_ck      : out   std_logic;                                        -- mem_ck
+			memory_0_mem_ck_n    : out   std_logic;                                        -- mem_ck_n
+			memory_0_mem_cke     : out   std_logic;                                        -- mem_cke
+			memory_0_mem_cs_n    : out   std_logic;                                        -- mem_cs_n
+			memory_0_mem_ras_n   : out   std_logic;                                        -- mem_ras_n
+			memory_0_mem_cas_n   : out   std_logic;                                        -- mem_cas_n
+			memory_0_mem_we_n    : out   std_logic;                                        -- mem_we_n
+			memory_0_mem_reset_n : out   std_logic;                                        -- mem_reset_n
+			memory_0_mem_dq      : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- mem_dq
+			memory_0_mem_dqs     : inout std_logic                     := 'X';             -- mem_dqs
+			memory_0_mem_dqs_n   : inout std_logic                     := 'X';             -- mem_dqs_n
+			memory_0_mem_odt     : out   std_logic;                                        -- mem_odt
+			memory_0_mem_dm      : out   std_logic;                                        -- mem_dm
+			memory_0_oct_rzqin   : in    std_logic                     := 'X';             -- oct_rzqin
+			vga_green            : out   std_logic_vector(7 downto 0);                     -- green
+			vga_red              : out   std_logic_vector(7 downto 0);                     -- red
+			vga_blue             : out   std_logic_vector(7 downto 0);                     -- blue
+			vga_hs               : out   std_logic;                                        -- hs
+			vga_vs               : out   std_logic;                                        -- vs
+			vga_vga_clk          : out   std_logic;                                        -- vga_clk
+			vga_vga_sync         : out   std_logic;                                        -- vga_sync
+			vga_vga_blank        : out   std_logic                                         -- vga_blank
+		);
+	end component god_bless_apollo;
+

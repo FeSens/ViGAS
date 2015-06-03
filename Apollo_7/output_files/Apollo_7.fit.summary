@@ -1,0 +1,19 @@
+Fitter Status : Failed - Thu May  7 21:57:51 2015
+Quartus II 64-Bit Version : 14.1.1 Build 190 01/19/2015 SJ Full Version
+Revision Name : Apollo_7
+Top-level Entity Name : Instrument_Unit
+Family : Cyclone V
+Device : 5CSXFC6D6F31C8ES
+Timing Models : Preliminary
+Logic utilization (in ALMs) : 2,387 / 41,910 ( 6 % )
+Total registers : 3479
+Total pins : 152 / 499 ( 30 % )
+Total virtual pins : 0
+Total block memory bits : 207,360 / 5,662,720 ( 4 % )
+Total DSP Blocks : 0 / 112 ( 0 % )
+Total HSSI RX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 9 ( 0 % )
+Total HSSI TX PCSs : 0 / 9 ( 0 % )
+Total HSSI PMA TX Serializers : 0 / 9 ( 0 % )
+Total PLLs : 2 / 15 ( 13 % )
+Total DLLs : 2 / 4 ( 50 % )

@@ -1,0 +1,29 @@
+Quartus II Archive log --	/home/vigas/Apollo/Apollo_6/Instrument_Unit.qarlog
+
+Archive:	/home/vigas/Apollo/Apollo_6/Instrument_Unit.qar
+Date:		Fri May  8 21:14:03 2015
+Quartus II 64-Bit		14.1.1 Build 190 01/19/2015 SJ Full Version
+
+	=========== Files Selected: ===========
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.cmp.atm
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.cmp.cfm
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.cmp.dfp
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.cmp.dpi
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.cmp.hdbx
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.cmp.logdb
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.cmp.map.kpt
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.cmp.qxp_info
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.cmp.rcf
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.cmp.scidsc
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.map.atm
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.map.dpi
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.map.hdbx
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.map.logdb
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.map.map.kpt
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.map.qxp_info
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/Apollo_6.map.scidsc
+/home/vigas/Apollo/Apollo_6/db/Apollo_6_tmp_qic_export_20/qic_export_file_list
+	======= Total: 18 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

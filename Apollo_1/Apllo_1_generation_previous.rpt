@@ -1,0 +1,45 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=/home/vigas/Apollo/Apollo_1 --output-directory=/home/vigas/Apollo/Apollo_1 --report-file=bsf:/home/vigas/Apollo/Apollo_1/Apllo_1.bsf --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSXFC6D6F31C8ES --system-info=DEVICE_SPEEDGRADE=8_H6 --component-file=/home/vigas/Apollo/Apollo_1/Apllo_1.qsys --remove-qsys-generate-warning
+Progress: Loading Apollo_1/Apllo_1.qsys
+Progress: Reading input file
+Progress: Adding Summer_0 [Summer 1.0]
+Progress: Parameterizing module Summer_0
+Progress: Adding clk_0 [clock_source 14.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 14.1]
+Progress: Parameterizing module hps_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Apllo_1.Summer_0.avalon_slave_0: Signal writedata appears 2 times (only once is allowed)
+Info: Apllo_1.hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: Apllo_1.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: Apllo_1.hps_0: set_interface_assignment: Interface "hps_io" does not exist
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=/home/vigas/Apollo/Apollo_1 --output-directory=/home/vigas/Apollo/Apollo_1/synthesis --file-set=QUARTUS_SYNTH --report-file=html:/home/vigas/Apollo/Apollo_1/Apllo_1.html --report-file=sopcinfo:/home/vigas/Apollo/Apollo_1/Apllo_1.sopcinfo --report-file=cmp:/home/vigas/Apollo/Apollo_1/Apllo_1.cmp --report-file=qip:/home/vigas/Apollo/Apollo_1/synthesis/Apllo_1.qip --report-file=svd:/home/vigas/Apollo/Apollo_1/synthesis/Apllo_1.svd --report-file=regmap:/home/vigas/Apollo/Apollo_1/synthesis/Apllo_1.regmap --report-file=xml:/home/vigas/Apollo/Apollo_1/Apllo_1.xml --report-file=debuginfo:/home/vigas/Apollo/Apollo_1/synthesis/Apllo_1.debuginfo --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSXFC6D6F31C8ES --system-info=DEVICE_SPEEDGRADE=8_H6 --component-file=/home/vigas/Apollo/Apollo_1/Apllo_1.qsys --remove-qsys-generate-warning --language=VERILOG
+Progress: Loading Apollo_1/Apllo_1.qsys
+Progress: Reading input file
+Progress: Adding Summer_0 [Summer 1.0]
+Progress: Parameterizing module Summer_0
+Progress: Adding clk_0 [clock_source 14.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 14.1]
+Progress: Parameterizing module hps_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Apllo_1.Summer_0.avalon_slave_0: Signal writedata appears 2 times (only once is allowed)
+Info: Apllo_1.hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: Apllo_1.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: Apllo_1.hps_0: set_interface_assignment: Interface "hps_io" does not exist
+Info: Apllo_1: Generating Apllo_1 "Apllo_1" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master hps_0.h2f_lw_axi_master and slave Summer_0.avalon_slave_0 because the master is of type axi and the slave is of type avalon.
+Warning: Translator Summer_0_avalon_slave_0_translator failed to match interface Summer_0.avalon_slave_0
+Info: Apllo_1: Done "Apllo_1" with 1 modules, 0 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

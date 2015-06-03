@@ -1,0 +1,31 @@
+	component IntrumentUnit is
+		port (
+			clk_clk                     : in    std_logic                     := 'X';             -- clk
+			memory_mem_a                : out   std_logic_vector(12 downto 0);                    -- mem_a
+			memory_mem_ba               : out   std_logic_vector(2 downto 0);                     -- mem_ba
+			memory_mem_ck               : out   std_logic;                                        -- mem_ck
+			memory_mem_ck_n             : out   std_logic;                                        -- mem_ck_n
+			memory_mem_cke              : out   std_logic;                                        -- mem_cke
+			memory_mem_cs_n             : out   std_logic;                                        -- mem_cs_n
+			memory_mem_ras_n            : out   std_logic;                                        -- mem_ras_n
+			memory_mem_cas_n            : out   std_logic;                                        -- mem_cas_n
+			memory_mem_we_n             : out   std_logic;                                        -- mem_we_n
+			memory_mem_reset_n          : out   std_logic;                                        -- mem_reset_n
+			memory_mem_dq               : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- mem_dq
+			memory_mem_dqs              : inout std_logic                     := 'X';             -- mem_dqs
+			memory_mem_dqs_n            : inout std_logic                     := 'X';             -- mem_dqs_n
+			memory_mem_odt              : out   std_logic;                                        -- mem_odt
+			memory_mem_dm               : out   std_logic;                                        -- mem_dm
+			memory_oct_rzqin            : in    std_logic                     := 'X';             -- oct_rzqin
+			reset_reset_n               : in    std_logic                     := 'X';             -- reset_n
+			space_0_conduit_end_red     : out   std_logic_vector(7 downto 0);                     -- red
+			space_0_conduit_end_green   : out   std_logic_vector(7 downto 0);                     -- green
+			space_0_conduit_end_blue    : out   std_logic_vector(7 downto 0);                     -- blue
+			space_0_conduit_end_hs      : out   std_logic;                                        -- hs
+			space_0_conduit_end_vs      : out   std_logic;                                        -- vs
+			space_0_conduit_end_vga_clk : out   std_logic;                                        -- vga_clk
+			space_0_conduit_end_sync    : out   std_logic;                                        -- sync
+			space_0_conduit_end_blank   : out   std_logic                                         -- blank
+		);
+	end component IntrumentUnit;
+

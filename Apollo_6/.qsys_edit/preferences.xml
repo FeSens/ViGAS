@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces" showResetDomains="0" showClockDomains="0">
+  <columns>
+   <connections preferredWidth="30" />
+   <irq preferredWidth="34" />
+   <inputclock preferredWidth="252" />
+   <endaddress preferredWidth="108" />
+   <name preferredWidth="253" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Library,Project" />
+ <window width="962" height="1053" x="661" y="27" />
+ <generation synthesis="VHDL" path="_PROJECT_NAME_" />
+</preferences>

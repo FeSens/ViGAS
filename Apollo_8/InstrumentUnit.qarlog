@@ -1,0 +1,26 @@
+Quartus II Archive log --	/home/vigas/Apollo/Apollo_8/InstrumentUnit.qarlog
+
+Archive:	/home/vigas/Apollo/Apollo_8/InstrumentUnit.qar
+Date:		Fri May  8 19:45:28 2015
+Quartus II 64-Bit		14.1.1 Build 190 01/19/2015 SJ Full Version
+
+	=========== Files Selected: ===========
+/home/vigas/Apollo/Apollo_8/db/Apollo_8_tmp_qic_export_0/Apollo_8.cmp.atm
+/home/vigas/Apollo/Apollo_8/db/Apollo_8_tmp_qic_export_0/Apollo_8.cmp.cfm
+/home/vigas/Apollo/Apollo_8/db/Apollo_8_tmp_qic_export_0/Apollo_8.cmp.dpi
+/home/vigas/Apollo/Apollo_8/db/Apollo_8_tmp_qic_export_0/Apollo_8.cmp.hdbx
+/home/vigas/Apollo/Apollo_8/db/Apollo_8_tmp_qic_export_0/Apollo_8.cmp.map.kpt
+/home/vigas/Apollo/Apollo_8/db/Apollo_8_tmp_qic_export_0/Apollo_8.cmp.qxp_info
+/home/vigas/Apollo/Apollo_8/db/Apollo_8_tmp_qic_export_0/Apollo_8.cmp.rcf
+/home/vigas/Apollo/Apollo_8/db/Apollo_8_tmp_qic_export_0/Apollo_8.cmp.scidsc
+/home/vigas/Apollo/Apollo_8/db/Apollo_8_tmp_qic_export_0/Apollo_8.map.atm
+/home/vigas/Apollo/Apollo_8/db/Apollo_8_tmp_qic_export_0/Apollo_8.map.dpi
+/home/vigas/Apollo/Apollo_8/db/Apollo_8_tmp_qic_export_0/Apollo_8.map.hdbx
+/home/vigas/Apollo/Apollo_8/db/Apollo_8_tmp_qic_export_0/Apollo_8.map.map.kpt
+/home/vigas/Apollo/Apollo_8/db/Apollo_8_tmp_qic_export_0/Apollo_8.map.qxp_info
+/home/vigas/Apollo/Apollo_8/db/Apollo_8_tmp_qic_export_0/Apollo_8.map.scidsc
+/home/vigas/Apollo/Apollo_8/db/Apollo_8_tmp_qic_export_0/qic_export_file_list
+	======= Total: 15 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

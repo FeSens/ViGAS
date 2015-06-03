@@ -1,0 +1,17 @@
+Partition Merge Status : Successful - Thu May  7 18:36:29 2015
+Quartus II 64-Bit Version : 14.1.1 Build 190 01/19/2015 SJ Full Version
+Revision Name : Apollo_6
+Top-level Entity Name : Instrument_Unit
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 4416
+Total pins : 131
+Total virtual pins : 0
+Total block memory bits : 367,104
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 3
+Total DLLs : 2

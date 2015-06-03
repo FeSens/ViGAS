@@ -1,0 +1,69 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=/home/vigas/workspace --output-directory=/home/vigas/workspace/Apollo_13 --report-file=bsf:/home/vigas/workspace/Apollo_13/Apollo_13.bsf --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSXFC6D6F31C8ES --system-info=DEVICE_SPEEDGRADE=8_H6 --component-file=/home/vigas/workspace/Apollo_13.qsys --remove-qsys-generate-warning
+Progress: Loading workspace/Apollo_13.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 14.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 14.1]
+Progress: Parameterizing module hps_0
+Progress: Adding pio_0 [altera_avalon_pio 14.1]
+Progress: Parameterizing module pio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Apollo_13.hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: Apollo_13.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: Apollo_13.hps_0: set_interface_assignment: Interface "hps_io" does not exist
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=/home/vigas/workspace --output-directory=/home/vigas/workspace/Apollo_13/synthesis --file-set=QUARTUS_SYNTH --report-file=html:/home/vigas/workspace/Apollo_13/Apollo_13.html --report-file=sopcinfo:/home/vigas/workspace/Apollo_13.sopcinfo --report-file=cmp:/home/vigas/workspace/Apollo_13/Apollo_13.cmp --report-file=qip:/home/vigas/workspace/Apollo_13/synthesis/Apollo_13.qip --report-file=svd:/home/vigas/workspace/Apollo_13/synthesis/Apollo_13.svd --report-file=regmap:/home/vigas/workspace/Apollo_13/synthesis/Apollo_13.regmap --report-file=xml:/home/vigas/workspace/Apollo_13/Apollo_13.xml --report-file=debuginfo:/home/vigas/workspace/Apollo_13/synthesis/Apollo_13.debuginfo --system-info=DEVICE_FAMILY="Cyclone V" --system-info=DEVICE=5CSXFC6D6F31C8ES --system-info=DEVICE_SPEEDGRADE=8_H6 --component-file=/home/vigas/workspace/Apollo_13.qsys --remove-qsys-generate-warning --language=VERILOG
+Progress: Loading workspace/Apollo_13.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 14.1]
+Progress: Parameterizing module clk_0
+Progress: Adding hps_0 [altera_hps 14.1]
+Progress: Parameterizing module hps_0
+Progress: Adding pio_0 [altera_avalon_pio 14.1]
+Progress: Parameterizing module pio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Apollo_13.hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: Apollo_13.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: Apollo_13.hps_0: set_interface_assignment: Interface "hps_io" does not exist
+Info: Apollo_13: Generating Apollo_13 "Apollo_13" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master hps_0.h2f_lw_axi_master and slave pio_0.s1 because the master is of type axi and the slave is of type avalon.
+Info: hps_0: "Running  for module: hps_0"
+Info: hps_0: HPS Main PLL counter settings: n = 0  m = 63
+Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hps_0: set_interface_assignment: Interface "hps_io" does not exist
+Info: hps_0: "Apollo_13" instantiated altera_hps "hps_0"
+Info: pio_0: Starting RTL generation for module 'Apollo_13_pio_0'
+Info: pio_0:   Generation command is [exec /home/vigas/altera/14.1/quartus/linux64/perl/bin/perl -I /home/vigas/altera/14.1/quartus/linux64/perl/lib -I /home/vigas/altera/14.1/quartus/sopc_builder/bin/europa -I /home/vigas/altera/14.1/quartus/sopc_builder/bin/perl_lib -I /home/vigas/altera/14.1/quartus/sopc_builder/bin -I /home/vigas/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/vigas/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/vigas/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=Apollo_13_pio_0 --dir=/tmp/alt6526_8809352434419739063.dir/0001_pio_0_gen/ --quartus_dir=/home/vigas/altera/14.1/quartus --verilog --config=/tmp/alt6526_8809352434419739063.dir/0001_pio_0_gen//Apollo_13_pio_0_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_0: Done RTL generation for module 'Apollo_13_pio_0'
+Info: pio_0: "Apollo_13" instantiated altera_avalon_pio "pio_0"
+Info: mm_interconnect_0: "Apollo_13" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "Apollo_13" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: pio_0_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "pio_0_s1_translator"
+Info: hps_0_h2f_lw_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_lw_axi_master_agent"
+Info: pio_0_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "pio_0_s1_agent"
+Info: pio_0_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "pio_0_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: pio_0_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "pio_0_s1_burst_adapter"
+Info: Reusing file /home/vigas/workspace/Apollo_13/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/vigas/workspace/Apollo_13/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: Apollo_13: Done "Apollo_13" with 19 modules, 72 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

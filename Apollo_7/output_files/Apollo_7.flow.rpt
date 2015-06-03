@@ -1,0 +1,172 @@
+Flow report for Apollo_7
+Thu May  7 21:57:52 2015
+Quartus II 64-Bit Version 14.1.1 Build 190 01/19/2015 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Flow Failed - Thu May  7 21:57:51 2015      ;
+; Quartus II 64-Bit Version       ; 14.1.1 Build 190 01/19/2015 SJ Full Version ;
+; Revision Name                   ; Apollo_7                                    ;
+; Top-level Entity Name           ; Instrument_Unit                             ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSXFC6D6F31C8ES                            ;
+; Timing Models                   ; Preliminary                                 ;
+; Logic utilization (in ALMs)     ; 2,387 / 41,910 ( 6 % )                      ;
+; Total registers                 ; 3479                                        ;
+; Total pins                      ; 152 / 499 ( 30 % )                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 207,360 / 5,662,720 ( 4 % )                 ;
+; Total DSP Blocks                ; 0 / 112 ( 0 % )                             ;
+; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                               ;
+; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                               ;
+; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                               ;
+; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                               ;
+; Total PLLs                      ; 2 / 15 ( 13 % )                             ;
+; Total DLLs                      ; 2 / 4 ( 50 % )                              ;
++---------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/07/2015 21:20:18 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Apollo_7            ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                         ;
++-----------------------------------------------+---------------------------------------+---------------+-----------------+----------------+
+; Assignment Name                               ; Value                                 ; Default Value ; Entity Name     ; Section Id     ;
++-----------------------------------------------+---------------------------------------+---------------+-----------------+----------------+
+; AUTO_EXPORT_INCREMENTAL_COMPILATION           ; On                                    ; Off           ; --              ; --             ;
+; COMPILER_SIGNATURE_ID                         ; 189211247693282.143104441807682       ; --            ; --              ; --             ;
+; EDA_OUTPUT_DATA_FORMAT                        ; Vhdl                                  ; --            ; --              ; eda_simulation ;
+; EDA_SIMULATION_TOOL                           ; ModelSim-Altera (VHDL)                ; <None>        ; --              ; --             ;
+; INCREMENTAL_COMPILATION_EXPORT_FILE           ; Instrument_Unit.qxp                   ; --            ; --              ; --             ;
+; INCREMENTAL_COMPILATION_EXPORT_FLATTEN        ; On                                    ; --            ; --              ; --             ;
+; INCREMENTAL_COMPILATION_EXPORT_PARTITION_NAME ; Top                                   ; --            ; --              ; --             ;
+; INCREMENTAL_COMPILATION_EXPORT_POST_FIT       ; On                                    ; --            ; --              ; --             ;
+; INCREMENTAL_COMPILATION_EXPORT_POST_SYNTH     ; On                                    ; --            ; --              ; --             ;
+; INCREMENTAL_COMPILATION_EXPORT_ROUTING        ; On                                    ; --            ; --              ; --             ;
+; MAX_CORE_JUNCTION_TEMP                        ; 85                                    ; --            ; --              ; --             ;
+; MIN_CORE_JUNCTION_TEMP                        ; 0                                     ; --            ; --              ; --             ;
+; PARTITION_COLOR                               ; 16764057                              ; --            ; Instrument_Unit ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL           ; PLACEMENT_AND_ROUTING                 ; --            ; Instrument_Unit ; Top            ;
+; PARTITION_NETLIST_TYPE                        ; SOURCE                                ; --            ; Instrument_Unit ; Top            ;
+; POWER_BOARD_THERMAL_MODEL                     ; None (CONSERVATIVE)                   ; --            ; --              ; --             ;
+; POWER_PRESET_COOLING_SOLUTION                 ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --              ; --             ;
+; PROJECT_OUTPUT_DIRECTORY                      ; output_files                          ; --            ; --              ; --             ;
+; SMART_RECOMPILE                               ; On                                    ; Off           ; --              ; --             ;
+; TOP_LEVEL_ENTITY                              ; Instrument_Unit                       ; Apollo_7      ; --              ; --             ;
++-----------------------------------------------+---------------------------------------+---------------+-----------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:04:17     ; 1.0                     ; 1476 MB             ; 00:08:04                           ;
+; Fitter               ; 00:00:17     ; 1.0                     ; 1185 MB             ; 00:00:14                           ;
+; Fitter               ; 00:00:17     ; 1.0                     ; 1203 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:15     ; 1.0                     ; 1204 MB             ; 00:00:14                           ;
+; Fitter               ; 00:00:15     ; 1.0                     ; 1203 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:15     ; 1.0                     ; 1202 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:14     ; 1.0                     ; 1204 MB             ; 00:00:14                           ;
+; Fitter               ; 00:00:15     ; 1.0                     ; 1204 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:14     ; 1.0                     ; 1204 MB             ; 00:00:14                           ;
+; Fitter               ; 00:00:15     ; 1.0                     ; 1204 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:15     ; 1.0                     ; 1204 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:14     ; 1.0                     ; 1203 MB             ; 00:00:14                           ;
+; Fitter               ; 00:00:15     ; 1.0                     ; 1204 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:15     ; 1.0                     ; 1203 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:15     ; 1.0                     ; 1204 MB             ; 00:00:15                           ;
+; Total                ; 00:07:48     ; --                      ; --                  ; 00:11:29                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                     ;
++----------------------+------------------+-------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name     ; OS Version ; Processor type ;
++----------------------+------------------+-------------+------------+----------------+
+; Analysis & Synthesis ; fl-eln-lpde-04   ; Fedora Core ; 20         ; x86_64         ;
+; Fitter               ; fl-eln-lpde-04   ; Fedora Core ; 20         ; x86_64         ;
+; Fitter               ; fl-eln-lpde-04   ; Fedora Core ; 20         ; x86_64         ;
+; Fitter               ; fl-eln-lpde-04   ; Fedora Core ; 20         ; x86_64         ;
+; Fitter               ; fl-eln-lpde-04   ; Fedora Core ; 20         ; x86_64         ;
+; Fitter               ; fl-eln-lpde-04   ; Fedora Core ; 20         ; x86_64         ;
+; Fitter               ; fl-eln-lpde-04   ; Fedora Core ; 20         ; x86_64         ;
+; Fitter               ; fl-eln-lpde-04   ; Fedora Core ; 20         ; x86_64         ;
+; Fitter               ; fl-eln-lpde-04   ; Fedora Core ; 20         ; x86_64         ;
+; Fitter               ; fl-eln-lpde-04   ; Fedora Core ; 20         ; x86_64         ;
+; Fitter               ; fl-eln-lpde-04   ; Fedora Core ; 20         ; x86_64         ;
+; Fitter               ; fl-eln-lpde-04   ; Fedora Core ; 20         ; x86_64         ;
+; Fitter               ; fl-eln-lpde-04   ; Fedora Core ; 20         ; x86_64         ;
+; Fitter               ; fl-eln-lpde-04   ; Fedora Core ; 20         ; x86_64         ;
+; Fitter               ; fl-eln-lpde-04   ; Fedora Core ; 20         ; x86_64         ;
++----------------------+------------------+-------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Apollo_7 -c Apollo_7
+quartus_fit --read_settings_files=off --write_settings_files=off Apollo_7 -c Apollo_7
+quartus_fit --read_settings_files=on --write_settings_files=off Apollo_7 -c Apollo_7
+quartus_fit --read_settings_files=on --write_settings_files=off Apollo_7 -c Apollo_7
+quartus_fit --read_settings_files=on --write_settings_files=off Apollo_7 -c Apollo_7
+quartus_fit --read_settings_files=on --write_settings_files=off Apollo_7 -c Apollo_7
+quartus_fit --read_settings_files=on --write_settings_files=off Apollo_7 -c Apollo_7
+quartus_fit --read_settings_files=on --write_settings_files=off Apollo_7 -c Apollo_7
+quartus_fit --read_settings_files=on --write_settings_files=off Apollo_7 -c Apollo_7
+quartus_fit --read_settings_files=on --write_settings_files=off Apollo_7 -c Apollo_7
+quartus_fit --read_settings_files=on --write_settings_files=off Apollo_7 -c Apollo_7
+quartus_fit --read_settings_files=on --write_settings_files=off Apollo_7 -c Apollo_7
+quartus_fit --read_settings_files=on --write_settings_files=off Apollo_7 -c Apollo_7
+quartus_fit --read_settings_files=on --write_settings_files=off Apollo_7 -c Apollo_7
+quartus_fit --read_settings_files=on --write_settings_files=off Apollo_7 -c Apollo_7
+
+
+

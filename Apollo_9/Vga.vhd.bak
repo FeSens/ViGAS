@@ -1,0 +1,125 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use IEEE.std_logic_signed.all;
+
+entity SpaceCraft is
+
+port (
+			clk : in std_logic;
+			reset : in std_logic
+			
+			clk_25 : in std_logic;
+			VGA_R : out std_logic_vector(7 downto 0);
+			VGA_G : out std_logic_vector(7 downto 0);
+			VGA_B : out std_logic_vector(7 downto 0);
+			VGA_HS : out std_logic;
+			VGA_VS : out std_logic;
+			VGA_CLK : out std_logic;
+			VGA_SYNC_n : out std_logic := '0';
+			VGA_BLANK_n : out std_logic := '1';
+			
+			-- read master
+			read_request : out std_logic;
+			read_address : out std_logic_vector (31 downto 0);
+			read_readdata : in std_logic_vector (31 downto 0);
+			read_waitrequest : in std_logic;
+
+);
+
+
+end SpaceCraft;
+
+architecture behavior of SpaceCraft is
+	signal data : std_logic_vector(31 downto 0);
+	signal hc : integer range 0 to 799 := 0;
+	signal vc : integer range 0 to 799 := 0;
+	
+	signal vga_address := std_logic_vector(31 downto 0);
+	
+	type read_states_T is (idle, running, stopping);
+	signal read_state : read_states_T;
+	signal read_flag : in std_logic := 0;
+begin
+	vga_address (8 downto 0) <= std_logic_vector(to_unsigned((vc),9));
+	vga_address (18 downto 9) <= std_logic_vector(to_unsigned((hc),10));
+	vga_address (31 downto 19) <= "0000000000000";
+	
+	process (clk)
+	begin
+	if(clk'event and clk = '0') then	
+		if(hc < 96) then
+			VGA_HS <= '0';
+		else
+			VGA_HS <= '1';
+		end if;
+		
+		if(vc < 2) thenvga_address
+			VGA_VS <= '0';
+		else
+			VGA_VS <= '1';
+		end if;
+		
+	end if;	
+	end process;
+	
+Avalon_read: process (clk, reset)
+begin
+	if reset = '1' then
+		read_state <= idle;
+		read_address <= (others => '0');
+	elsif rising_edge (clk) then
+	
+		case read_state is 
+		
+			when idle =>
+				if read_flag = '1' then
+					read_state <= running;
+					read_address <= vga_address;
+				end if;
+				
+			when running =>
+				if read_waitrequest /= '1' then
+					data <= read_readdata;
+					read_state <= stopping;
+				end if;
+			
+			when stopping =>
+				read_state <= idle;
+				read_flag <= '0';
+		end case;
+	end if;
+end process;
+		
+process (clk_25)
+begin
+	if(clk_25'event and clk_25 = '0') then
+		if(hc < 799) then
+			hc <= hc + 1;
+		else 
+			hc <= 0;
+			if (vc < 524) then
+				vc <= vc + 1;
+			else
+				vc <= 0;
+			end if;
+		end if;
+	end if;		
+end process;
+	
+
+process (vc,hc)
+begin
+	if( (hc > 144) and (hc < (144 + 640)) and (vc > 31) and (vc < (31 + 480)) ) then 
+		VGA_R <= data(7 downto 0);
+		VGA_G <= data(15 downto 8);
+		VGA_B <= data(23 downto 16);
+	else
+		VGA_R <= "00000000";
+		VGA_G <= "00000000";
+		VGA_B <= "00000000";
+	end if;
+	
+end process;
+
+end behavior;
